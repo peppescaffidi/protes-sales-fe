@@ -1,0 +1,63 @@
+<div class="protes-modal-background">
+  <div class="protes-modal-container protes-modal-product-box d-flex flex-column">
+    <div class="d-flex align-items-center">
+      <h2 class="protes-title m-4 col">Seleziona Farmaco</h2>
+      <div (click)="oncloseModal(false)" class="col d-flex justify-content-end">
+        <i class="fa-solid fa-xmark protes-notes-close-icon m-4"></i>
+      </div>
+    </div>
+    <div class="protes-notes-comments-box d-flex row justify-content-center align-items-center m-3">
+      <div class="protes-notes-message-box d-flex justify-content-center p-4 m-2 mx-4 col-3">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-capsules protes-notes-product-icon"></i>
+        </div>
+        <div class="protes-comment-box">
+          <div class="d-flex flex-column">
+            <h3 class="protes-notes-title-comment">Augmentin</h3>
+            <h5 class="protes-modal-subtitle">Maria Rossi</h5>
+            <h5 class="protes-modal-subtitle">23/04/2024</h5>
+          </div>
+        </div>
+      </div>
+      <div class="protes-notes-message-box d-flex justify-content-center p-4 m-2 mx-4 col-3">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-capsules protes-notes-product-icon"></i>
+        </div>
+        <div class="protes-comment-box">
+          <div class="d-flex flex-column">
+            <h3 class="protes-notes-title-comment">Augmentin</h3>
+            <h5 class="protes-modal-subtitle">Maria Rossi</h5>
+            <h5 class="protes-modal-subtitle">23/04/2024</h5>
+          </div>
+        </div>
+      </div>
+      <div class="protes-notes-message-box d-flex justify-content-center p-4 m-2 mx-4 col-3">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-capsules protes-notes-product-icon"></i>
+        </div>
+        <div class="protes-comment-box">
+          <div class="d-flex flex-column">
+            <h3 class="protes-notes-title-comment">Augmentin</h3>
+            <h5 class="protes-modal-subtitle">Maria Rossi</h5>
+            <h5 class="protes-modal-subtitle">23/04/2024</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center m-3">
+      <button class="protes-button-primary" (click)="openModalProduct(true)">
+        <i class="fa-solid fa-circle-plus mx-1"></i>
+        Create new Product</button>
+    </div>
+  </div>
+</div>
+
+<!--*********** MODAL NEW PRODUCT *************-->
+<app-protes-modal-new-product
+  *ngIf="isActiveModalProduct"
+  (closeModal)="openModalProduct($event)"
+>
+</app-protes-modal-new-product>
+
+
+

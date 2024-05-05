@@ -1,0 +1,15 @@
+{
+  "image" : "",
+  "steps" : [
+    {"stepNumber": "0", "name": "Start", "description": "Preparazione richiesta di inserimento PTR e invio DOC", "dueDate": "2024-02-01", "level": "4"},
+    {"stepNumber": "1", "name": "Preparazione richiesta di inserimento PTR e invio DOC", "description": "Preparazione richiesta di inserimento PTR e invio DOC", "dueDate": "2024-03-01", "level": "4"},
+    {"stepNumber": "2", "name": "Ricezione della documentazione e valutazione della commissione scientifica", "description": "Ricezione della documentazione e valutazione della commissione scientifica", "dueDate": "2024-04-01", "level": "4"},
+    {"stepNumber": "3", "name": "Riunione e valutazione CTR", "description": "Riunione e valutazione CTR", "dueDate": "2024-05-01", "level": "3"},
+    {"stepNumber": "4", "name": "Delibera e definizione dei centri prescrittori", "description": "Delibera e definizione dei centri prescrittori", "dueDate": "2024-06-01", "level": "3"},
+    {"stepNumber": "5", "name": "Richiesta per acquisto economia o/e gara", "description": "Richiesta per acquisto economia o/e gara", "dueDate": "2024-07-01", "level": "2"},
+    {"stepNumber": "6", "name": "Richiesta per acquisto economia", "description": "Richiesta per acquisto economia", "dueDate": "2024-08-01", "level": "1"},
+    {"stepNumber": "7", "name": "Indizione e aggiudicazione gara", "description": "Indizione e aggiudicazione gara", "dueDate": "2024-09-01", "level": "1"},
+    {"stepNumber": "8", "name": "Inserimento del farmaco nel sistema informatico", "description": "Inserimento del farmaco nel sistema informatico", "dueDate": "2024-10-01", "level": "1"},
+    {"stepNumber": "9", "name": "Acquisto e ricezione del farmaco", "description": "Acquisto e ricezione del farmaco", "dueDate": "2024-11-01", "level": "1"}
+  ]
+}

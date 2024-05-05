@@ -1,0 +1,74 @@
+[
+  {
+    "onekey": "AB1234",
+    "cluster": "D",
+    "name": "OSPEDALE 1",
+    "city": "Napoli",
+    "averageTimeForCommissionMeeting": "N/A",
+    "potentialNumber": 18,
+    "potentialPercentage": 0.01
+  },
+  {
+    "onekey": "CD5678",
+    "cluster": "E",
+    "name": "OSPEDALE 2",
+    "city": "Salerno",
+    "averageTimeForCommissionMeeting": "N/A",
+    "potentialNumber": 22,
+    "potentialPercentage": 0.02
+  },
+  {
+    "onekey": "EF9012",
+    "cluster": "F",
+    "name": "OSPEDALE 3",
+    "city": "Avellino",
+    "averageTimeForCommissionMeeting": "N/A",
+    "potentialNumber": 15,
+    "potentialPercentage": 0.015
+  },
+  {
+    "onekey": "GH3456",
+    "cluster": "G",
+    "name": "OSPEDALE 4",
+    "city": "Benevento",
+    "averageTimeForCommissionMeeting": "N/A",
+    "potentialNumber": 20,
+    "potentialPercentage": 0.02
+  },
+  {
+    "onekey": "IJ7890",
+    "cluster": "H",
+    "name": "OSPEDALE 5",
+    "city": "Caserta",
+    "averageTimeForCommissionMeeting": "N/A",
+    "potentialNumber": 25,
+    "potentialPercentage": 0.025
+  },
+  {
+    "onekey": "KL1234",
+    "cluster": "I",
+    "name": "OSPEDALE 6",
+    "city": "Sorrento",
+    "averageTimeForCommissionMeeting": "N/A",
+    "potentialNumber": 16,
+    "potentialPercentage": 0.016
+  },
+  {
+    "onekey": "MN5678",
+    "cluster": "L",
+    "name": "OSPEDALE 7",
+    "city": "Nola",
+    "averageTimeForCommissionMeeting": "N/A",
+    "potentialNumber": 19,
+    "potentialPercentage": 0.019
+  },
+  {
+    "onekey": "OP9012",
+    "cluster": "M",
+    "name": "OSPEDALE 8",
+    "city": "Pompei",
+    "averageTimeForCommissionMeeting": "N/A",
+    "potentialNumber": 23,
+    "potentialPercentage": 0.023
+  }
+]

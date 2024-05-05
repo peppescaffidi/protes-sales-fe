@@ -1,0 +1,40 @@
+<div class="sales-section-box d-flex flex-column">
+  <div class="d-flex w-100 h-100 justify-content-start flex-column">
+    <div class="sales-logo-box w-100 px-3 d-flex justify-content-start">
+    </div>
+    <button>
+      <button class="sales-state-text-box w-100 d-flex justify-content-start align-items-center" (click)="showRegioni()">
+        <div class="d-flex justify-content-start p-3 m-0" *ngIf="viewBottonLeft">
+          <i class="sales-state-icon fa-solid fa-angle-left"></i>
+        </div>
+        <h5 class="sales-state-text p-3">Italia</h5>
+        <div class="d-flex w-100 justify-content-end align-items-end">
+          <i class="fa-solid fa-angle-down p-3" *ngIf="viewBottonDown"></i>
+          <i class="fa-solid fa-angle-up p-3" *ngIf="viewBottonUp"></i>
+        </div>
+      </button>
+    </button>
+    <div class="sales-regioni-card" *ngIf="viewRegioni">
+      <div *ngFor="let regione of regioniData">
+        <button class="sales-regioni-box" (click)="goToRegional(regione.regionName, regione.regionId)">
+          <h5 class="sales-regioni-text p-3">{{ regione.regionName }}</h5>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex w-100 h-100 justify-content-end align-items-start flex-column">
+    <div class="sales-state-settings-box w-100 px-3 my-4 d-flex justify-content-start align-items-center ">
+      <div class="d-flex h-100 justify-content-start align-items-start">
+        <i class="fa-solid fa-gear p-3"></i>
+      </div>
+      <div class="d-flex h-100 justify-content-start align-items-start" (click)="onSettings()">
+        <h5 class="p-3">Settings</h5>
+      </div>
+    </div>
+    <div class="w-100 px-3 d-flex justify-content-start align-items-center">
+      <div class="d-flex h-100 justify-content-start align-items-start">
+        <h6 class="p-1">© 2024 Protes Versione 1.0.0</h6>
+      </div>
+    </div>
+  </div>
+</div>

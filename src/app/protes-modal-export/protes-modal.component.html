@@ -1,0 +1,23 @@
+<div class="protes-modal-background">
+  <div class="protes-modal-container">
+    <div class="d-flex align-items-center row">
+      <h2 class="protes-title m-4 col">Upload File</h2>
+      <button (click)="oncloseModal(false)" class="col d-flex justify-content-end">
+        <i class="fa-solid fa-xmark m-4 protes-notes-close-icon"></i>
+      </button>
+    </div>
+    <div class="protes-drop-zone mx-4 mb-4 d-flex justify-content-center align-items-center flex-column" (dragover)="onDragOver($event)" (drop)="onDrop($event)">
+      <div class="protes-modal-upload-icon p-3 d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+      </div>
+      <div class="protes-modal-text p-3 d-flex justify-content-center align-items-center">
+        <p class="m-0 px-2 protes-modal-text-p">Drop file here or </p>
+        <button (click)="browseFiles()" class="protes-modal-text-span"> browse</button>
+      </div>
+      <div class="protes-modal-text p-1 d-flex justify-content-center align-items-center">
+        <p class="m-0 protes-modal-text-p-span">CSV, XLS </p>
+      </div>
+      <input type="file" #fileInput style="display: none;" (change)="onFileSelected($event)">
+    </div>
+  </div>
+</div>

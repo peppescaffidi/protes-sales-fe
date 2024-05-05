@@ -1,0 +1,37 @@
+<div class="protes-modal-background">
+  <div class="protes-modal-container">
+    <div class="d-flex align-items-center row">
+      <h2 class="protes-title m-4 mb-0 col">{{ title }}</h2>
+      <button (click)="oncloseModal(false)" class="col d-flex justify-content-end">
+        <i class="fa-solid fa-xmark m-4 protes-notes-close-icon"></i>
+      </button>
+    </div>
+    <div class="d-flex justify-content-center protes-table-overflow my-4">
+      <table class="m-4 mt-2 protes-table-box">
+        <thead class="protes-table-column">
+        <tr>
+          <th class="protes-table-column-item p-2 px-4"></th> <!-- Colonna per la checkbox -->
+          <th class="protes-table-column-item p-2 px-4">Ospedale</th>
+          <th class="protes-table-column-item p-2 px-4">Città</th>
+          <th class="protes-table-column-item p-2 px-4">Onekey</th>
+        </tr>
+        </thead>
+        <tbody class="">
+        <tr *ngFor="let row of rows; let i = index" [class.selected]="i === selectedRowIndex"
+            (click)="selectRow(i)" class="protes-table-row-box" >
+          <td class="protes-table-row-item p-3 px-4"><input type="checkbox" [checked]="selectedRowIndex === i"></td>
+          <td class="protes-table-row-item p-3 px-4">{{ row.name }}</td>
+          <td class="protes-table-row-item p-3 px-4">{{ row.city }}</td>
+          <td class="protes-table-row-item p-3 px-4">{{ row.onekey }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="protes-button-primary d-flex mb-3 mx-0" (click)="onSaveClick(true)">
+        <i class="fa-solid fa-floppy-disk px-2 d-flex justify-content-center align-items-center"></i>
+        <button>Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<section *ngIf="sessionToken == ''" class="d-flex w-100">
+  <app-lateral-bar (regionalTrue)="gestisciEventoRegional($event)" (nationalTrue)="gestisciEventoNational($event)"></app-lateral-bar>
+  <div class="d-flex flex-column w-100">
+    <div class="d-flex flex-column w-100">
+      <app-header></app-header>
+    </div>
+    <div class="d-flex flex-column w-100" *ngIf="national">
+      <app-sales></app-sales>
+    </div>
+    <div class="d-flex flex-column w-100" *ngIf="regional">
+      <app-regional
+      [(region)]="region"
+      ></app-regional>
+    </div>
+  </div>
+</section>
+<section *ngIf="sessionToken != ''">
+  <app-protes-auth (token)="setToken($event)"></app-protes-auth>
+</section>

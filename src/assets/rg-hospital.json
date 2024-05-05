@@ -1,0 +1,92 @@
+[
+  {
+    "onekey": "AB1234",
+    "cluster": "D",
+    "name": "Ospedale Fatebenefratelli",
+    "city": "Milano",
+    "averageTimeForCommissionMeeting": null,
+    "potentialNumber": 18,
+    "potentialPercentage": 1
+  },
+  {
+    "onekey": "CD5678",
+    "cluster": "B",
+    "name": "Ospedale Maggiore",
+    "city": "Bergamo",
+    "averageTimeForCommissionMeeting": null,
+    "potentialNumber": 25,
+    "potentialPercentage": 2
+  },
+  {
+    "onekey": "EF91011",
+    "cluster": "C",
+    "name": "Ospedale San Raffaele",
+    "city": "Milano",
+    "averageTimeForCommissionMeeting": null,
+    "potentialNumber": 20,
+    "potentialPercentage": 1.5
+  },
+  {
+    "onekey": "GH121314",
+    "cluster": "A",
+    "name": "Ospedale Policlinico",
+    "city": "Milano",
+    "averageTimeForCommissionMeeting": null,
+    "potentialNumber": 15,
+    "potentialPercentage": 1
+  },
+  {
+    "onekey": "IJ151617",
+    "cluster": "D",
+    "name": "Ospedale Papa Giovanni XXIII",
+    "city": "Bergamo",
+    "averageTimeForCommissionMeeting": null,
+    "potentialNumber": 22,
+    "potentialPercentage": 2.5
+  },
+  {
+    "onekey": "KL181920",
+    "cluster": "B",
+    "name": "Ospedale Niguarda",
+    "city": "Milano",
+    "averageTimeForCommissionMeeting": null,
+    "potentialNumber": 20,
+    "potentialPercentage": 1.5
+  },
+  {
+    "onekey": "MN212223",
+    "cluster": "C",
+    "name": "Ospedale Carlo Poma",
+    "city": "Mantova",
+    "averageTimeForCommissionMeeting": null,
+    "potentialNumber": 16,
+    "potentialPercentage": 1.2
+  },
+  {
+    "onekey": "OP242526",
+    "cluster": "A",
+    "name": "Ospedale di Cremona",
+    "city": "Cremona",
+    "averageTimeForCommissionMeeting": null,
+    "potentialNumber": 18,
+    "potentialPercentage": 1
+  },
+  {
+    "onekey": "QR272829",
+    "cluster": "D",
+    "name": "Ospedale Civile",
+    "city": "Brescia",
+    "averageTimeForCommissionMeeting": null,
+    "potentialNumber": 19,
+    "potentialPercentage": 1.3
+  },
+  {
+    "onekey": "ST303132",
+    "cluster": "B",
+    "name": "Ospedale San Matteo",
+    "city": "Vigevano",
+    "averageTimeForCommissionMeeting": null,
+    "potentialNumber": 24,
+    "potentialPercentage": 2.2
+  }
+]

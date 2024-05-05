@@ -1,0 +1,92 @@
+@import "src/app/styles/_variables.scss";
+
+.header-section-box{
+  height: 7vh;
+  width: 100%;
+  background-color: $thirdColor;
+}
+
+.header-menu-box{
+  height: 7vh;
+  color: $primaryColor;
+}
+
+.header-menu-text{
+  font-size: 0.8rem !important;
+  font-weight: 500;
+  margin: 0;
+}
+
+.header-item-active{
+  border-bottom: 4px solid $eigthColor;
+}
+
+.header-item-disactive{
+  opacity: 50%;
+}
+
+.header-user-box{
+  height: 4vh;
+  width: 4vh;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1.5px solid $eigthColor;
+}
+
+.header-function-box{
+  color: $primaryColor;
+  height: 5vh;
+}
+
+.header-function-icon{
+  font-size: 1.5rem;
+}
+
+.header-product-icon{
+  font-size: 1.5rem;
+  border-right: 0.5px solid #eaeaea;
+}
+
+.header-user-text{
+  color: $primaryColor;
+  margin-left: 0.5rem;
+}
+
+.header-user-name{
+  font-size: 0.9rem !important;
+  font-weight: 200;
+  margin: 0;
+}
+
+.header-product-name{
+  color: $primaryColor;
+  font-size: 0.9rem !important;
+  font-weight: 200;
+  margin: 0 1rem 0 0;
+}
+
+.header-product-box{
+  cursor: pointer;
+}
+
+.header-notifica-red{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #ff4141;
+  color: $primaryColor;
+}
+
+.header-notifica-green{
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: $eigthColor;
+  color: $primaryColor;
+}
+
+.header-notifica-text{
+  font-size: 11px!important;
+  font-weight: 500;
+  margin: 0;
+}

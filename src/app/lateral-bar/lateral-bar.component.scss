@@ -1,0 +1,62 @@
+@import "src/app/styles/_variables.scss";
+
+.sales-section-box{
+  height: 100vh;
+  background-color: $secondaryColor;
+}
+
+.sales-logo-box{
+  height: 7vh;
+  border-bottom: 0.7px solid $fifthColor;
+}
+
+.sales-state-text-box{
+  padding: 0;
+  font-weight: lighter;
+  color: $thirdColor;
+  border-bottom: 0.7px solid $fifthColor;
+}
+
+.sales-state-settings-box{
+  font-weight: lighter;
+  color: $thirdColor;
+  border-top: 0.7px solid $fifthColor;
+  cursor: pointer;
+}
+
+.sales-state-text{
+  font-size: 1.2rem !important;
+  font-weight: 400;
+  margin-right: 7rem;
+}
+
+.sales-regioni-box{
+  width: 100%;
+  color: $seventhColor;
+}
+
+.sales-regioni-box:hover{
+  background-color: #f0f4f8;
+}
+
+.sales-regioni-box:focus{
+  background-color: #e8f0fc;
+  border-right: 3px solid $thirdColor;
+  color: $thirdColor;
+  box-sizing: border-box;
+}
+
+.sales-state-icon{
+  color: $thirdColor;
+}
+
+.sales-regioni-card{
+  width: 100%;
+  height: 30rem;
+  overflow: auto;
+}
+
+.sales-regioni-text{
+  font-weight: 300;
+  margin: 0;
+}

@@ -1,0 +1,32 @@
+<div class="protes-modal-background">
+  <div class="protes-modal-container w-75">
+    <div class="d-flex align-items-center row">
+      <h2 class="protes-title m-4 mb-0 col">Aggiungi nuova riga</h2>
+      <button (click)="oncloseModal(false)" class="col d-flex justify-content-end">
+        <i class="fa-solid fa-xmark m-4 protes-notes-close-icon"></i>
+      </button>
+    </div>
+    <div class="d-flex justify-content-center">
+      <table class="m-4 mt-2">
+        <thead class="protes-table-column">
+        <tr>
+          <th class="protes-table-column-item p-2 px-4" *ngFor="let column of columns">{{ column.description }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="protes-edit-mode-row">
+          <td *ngFor="let column of columns; let i = index" class="p-2" >
+            <input class="p-2 protes-table-row-item" [(ngModel)]="rows[column.key]"/>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="protes-button-primary d-flex mb-3 mx-0" (click)="onSaveClick()">
+        <i class="fa-solid fa-floppy-disk px-2 d-flex justify-content-center align-items-center"></i>
+        <button>Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>

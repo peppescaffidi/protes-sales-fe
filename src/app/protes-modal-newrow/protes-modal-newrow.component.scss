@@ -1,0 +1,55 @@
+@import "src/app/styles/_variables.scss";
+
+.protes-modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.protes-modal-container {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.protes-table-column{
+  background-color: $primaryColor;
+  color: $seventhColor;
+}
+
+.protes-table-column-item{
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.protes-table-row-box:hover{
+  background-color: #f5f5f5;
+}
+
+.protes-table-row-item{
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: $thirdColor;
+}
+
+.protes-edit-mode-row{
+  background-color: #f5f5f5;
+}
+
+tr:first-child th:first-child { border-top-left-radius: 10px; }
+tr:first-child th:last-child { border-top-right-radius: 10px; }
+tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+.protes-edit-mode-row input::-webkit-input-placeholder {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: $fourthColor !important;
+}

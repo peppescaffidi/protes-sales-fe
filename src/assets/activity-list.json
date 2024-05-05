@@ -1,0 +1,102 @@
+[
+  {
+    "onekey": "random_value_1",
+    "cluster": "random_value_2",
+    "name": "Sottomissione documentazione GU"
+  },
+  {
+    "onekey": "random_value_3",
+    "cluster": "random_value_4",
+    "name": "Approvazione documentazione GU"
+  },
+  {
+    "onekey": "random_value_5",
+    "cluster": "random_value_6",
+    "name": "Sottomissione richiesta autorizzazione"
+  },
+  {
+    "onekey": "random_value_7",
+    "cluster": "random_value_8",
+    "name": "Valutazione impatto ambientale"
+  },
+  {
+    "onekey": "random_value_9",
+    "cluster": "random_value_10",
+    "name": "Ricerca fornitori"
+  },
+  {
+    "onekey": "random_value_11",
+    "cluster": "random_value_12",
+    "name": "Valutazione preventivi"
+  },
+  {
+    "onekey": "random_value_13",
+    "cluster": "random_value_14",
+    "name": "Negoziazione contratti"
+  },
+  {
+    "onekey": "random_value_15",
+    "cluster": "random_value_16",
+    "name": "Pianificazione lavori"
+  },
+  {
+    "onekey": "random_value_17",
+    "cluster": "random_value_18",
+    "name": "Avvio lavori"
+  },
+  {
+    "onekey": "random_value_19",
+    "cluster": "random_value_20",
+    "name": "Monitoraggio progressi"
+  },
+  {
+    "onekey": "random_value_21",
+    "cluster": "random_value_22",
+    "name": "Gestione risorse umane"
+  },
+  {
+    "onekey": "random_value_23",
+    "cluster": "random_value_24",
+    "name": "Controllo di qualità"
+  },
+  {
+    "onekey": "random_value_25",
+    "cluster": "random_value_26",
+    "name": "Gestione approvvigionamenti"
+  },
+  {
+    "onekey": "random_value_27",
+    "cluster": "random_value_28",
+    "name": "Comunicazioni con gli stakeholder"
+  },
+  {
+    "onekey": "random_value_29",
+    "cluster": "random_value_30",
+    "name": "Risoluzione problemi"
+  },
+  {
+    "onekey": "random_value_31",
+    "cluster": "random_value_32",
+    "name": "Valutazione dei rischi"
+  },
+  {
+    "onekey": "random_value_33",
+    "cluster": "random_value_34",
+    "name": "Rendicontazione finanziaria"
+  },
+  {
+    "onekey": "random_value_35",
+    "cluster": "random_value_36",
+    "name": "Valutazione dei risultati"
+  },
+  {
+    "onekey": "random_value_37",
+    "cluster": "random_value_38",
+    "name": "Chiusura del progetto"
+  },
+  {
+    "onekey": "random_value_39",
+    "cluster": "random_value_40",
+    "name": "Analisi del post-progetto"
+  }
+]

@@ -1,0 +1,24 @@
+@import "src/app/styles/_variables.scss";
+
+.regional-main-box{
+  width: 100%;
+  height: 93vh;
+  overflow: auto;
+}
+
+.regional-topbar-box{
+  border-radius: 20px;
+  background-color: $secondaryColor;
+  width: fit-content;
+  height: fit-content;
+}
+
+.regional-topbar-itembox{
+  margin: 0;
+}
+
+.regional-topbar-item-active{
+  border-bottom: 3px solid $eigthColor;
+  color: $thirdColor;
+}
+

@@ -1,0 +1,121 @@
+[
+    {
+      "id": 1,
+      "activities": "Sottomissione documentazione per GU",
+      "inclusionStepsInvolved": "1-2-3",
+      "expectedDate": "01/01/2023",
+      "criticalIssue": "-",
+      "owner": "RAM1",
+      "stakeholder": "Persona 1",
+      "notes": [
+        {
+          "title": "Comment 1",
+          "description": "Lorem ipsum ...",
+          "date": "01/01/2023"
+        }
+      ],
+      "notesLength": 0,
+      "status": "COMPLETED",
+      "isNational": true
+    },
+  {
+    "id": 1,
+    "activities": "Sottomissione documentazione per GU",
+    "inclusionStepsInvolved": "1-2-3",
+    "expectedDate": "01/01/2023",
+    "criticalIssue": "-",
+    "owner": "RAM1",
+    "stakeholder": "Persona 1",
+    "notes": [
+      {
+        "title": "Comment 1",
+        "description": "Lorem ipsum ...",
+        "date": "01/01/2023"
+      }
+    ],
+    "notesLength": 0,
+    "status": "COMPLETED",
+    "isNational": true
+  },
+  {
+    "id": 1,
+    "activities": "Sottomissione documentazione per GU",
+    "inclusionStepsInvolved": "1-2-3",
+    "expectedDate": "01/01/2023",
+    "criticalIssue": "-",
+    "owner": "RAM1",
+    "stakeholder": "Persona 1",
+    "notes": [
+      {
+        "title": "Comment 1",
+        "description": "Lorem ipsum ...",
+        "date": "01/01/2023"
+      }
+    ],
+    "notesLength": 0,
+    "status": "COMPLETED",
+    "isNational": true
+  },
+  {
+    "id": 1,
+    "activities": "Sottomissione documentazione per GU",
+    "inclusionStepsInvolved": "1-2-3",
+    "expectedDate": "01/01/2023",
+    "criticalIssue": "-",
+    "owner": "RAM1",
+    "stakeholder": "Persona 1",
+    "notes": [
+      {
+        "title": "Comment 1",
+        "description": "Lorem ipsum ...",
+        "date": "01/01/2023"
+      }
+    ],
+    "notesLength": 1,
+    "status": "COMPLETED",
+    "isNational": true
+  },
+  {
+    "id": 1,
+    "activities": "Sottomissione documentazione per GU",
+    "inclusionStepsInvolved": "1-2-3",
+    "expectedDate": "01/01/2023",
+    "criticalIssue": "-",
+    "owner": "RAM1",
+    "stakeholder": "Persona 1",
+    "notes": [
+      {
+        "title": "Comment 1",
+        "description": "Lorem ipsum ...",
+        "date": "01/01/2023"
+      },
+      {
+        "title": "Comment 1",
+        "description": "Lorem ipsum ...",
+        "date": "01/01/2023"
+      }
+    ],
+    "notesLength": 2,
+    "status": "COMPLETED",
+    "isNational": true
+  },
+  {
+    "id": 1,
+    "activities": "Sottomissione documentazione per GU",
+    "inclusionStepsInvolved": "1-2-3",
+    "expectedDate": "01/01/2023",
+    "criticalIssue": "-",
+    "owner": "RAM1",
+    "stakeholder": "Persona 1",
+    "notes": [
+      {
+        "title": "Comment 1",
+        "description": "Lorem ipsum ...",
+        "date": "01/01/2023"
+      }
+    ],
+    "notesLength": 1,
+    "status": "COMPLETED",
+    "isNational": true
+  }
+]

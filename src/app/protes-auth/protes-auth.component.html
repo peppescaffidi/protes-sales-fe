@@ -1,0 +1,40 @@
+<div class="protes-auth-main-box w-100 d-flex justify-content-center align-items-center flex-column">
+  <div class="protes-card d-flex justify-content-center align-items-center flex-column">
+    <div class="">
+      <img src="./assets/logoProtes.png" alt="Logo Protes">
+    </div>
+    <form [formGroup]="loginForm" (submit)="login()">
+      <div class="mw-100 pt-3 d-flex justify-content-center align-items-center flex-column">
+        <div class="protes-input-box">
+          <label class="protes-placeholder" for="email">Email</label><br>
+          <input class="protes-input" type="text" id="email" name="email" [formControlName]="'email'">
+        </div>
+        <div class="protes-input-box">
+          <label class="protes-placeholder" for="password">Password</label><br>
+          <input class="protes-input" type="password" id="password" name="password" [formControlName]="'password'">
+        </div>
+      </div>
+      <div class="w-100 pt-3 d-flex justify-content-center align-items-center">
+        <div class="w-100 d-flex justify-content-start align-items-start">
+          <div class="d-flex justify-content-center align-items-center">
+            <input type="checkbox" id="remember" name="vehicle2" value="">
+            <label class="protes-label-input" for="remember"> Remember me </label>
+          </div>
+        </div>
+        <div class="w-100 d-flex justify-content-end align-items-end">
+          <div class="d-flex justify-content-center align-items-center">
+            <a>
+              <h4 class="protes-label" > Forgot Password?</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 d-flex justify-content-center align-items-center">
+        <button class="w-100 protes-button-primary" type="submit">LOGIN</button>
+      </div>
+      <div class="w-100 d-flex justify-content-center align-items-center">
+        <h4 class="protes-label-input" > Don't have an account? <span class="protes-label-span"> Create an account </span></h4>
+      </div>
+    </form>
+  </div>
+</div>

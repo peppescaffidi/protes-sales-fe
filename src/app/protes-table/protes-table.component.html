@@ -1,0 +1,103 @@
+<div class="table-main-box d-flex flex-column m-4 mt-4">
+  <div class="d-flex p-3 pt-4 " *ngIf="title">
+    <h1 class="protes-title">{{ title }}</h1>
+    <div class="d-flex col d-flex justify-content-end mx-1">
+      <div class="protes-button-primary d-flex mb-3 mx-0" *ngIf="showSaveButton" (click)="onSaveClick()">
+        <i class="fa-solid fa-floppy-disk px-2 d-flex justify-content-center align-items-center"></i>
+        <button>Save Changes</button>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex " *ngIf="importCSV || bulkEdit || listaAttivita">
+    <div class="d-flex justify-content-start">
+      <div class="protes-button-third d-flex mb-3 mx-4" *ngIf="importCSV" (click)="openModal(true)">
+        <button>Import CSV</button>
+        <i class="fa-solid fa-arrow-up-from-bracket d-flex protes-import-icon justify-content-center align-items-center"></i>
+      </div>
+      <div class="protes-button-third d-flex mb-3 mx-4" *ngIf="listaAttivita" (click)="openModalMultiselect(true)">
+        <button>Lista attività</button>
+        <i class="fa-solid fa-bars d-flex protes-import-icon justify-content-center align-items-center"></i>
+      </div>
+    </div>
+    <div class="d-flex col justify-content-end">
+      <div class="protes-button-primary d-flex mb-3 mx-4" *ngIf="addRow" (click)="openModalRow(true)">
+      <button>Aggiungi riga</button>
+      <i class="fa-solid fa-plus d-flex protes-import-icon justify-content-center align-items-center"></i>
+    </div>
+    </div>
+  </div>
+  <table class="protes-table-box m-4 mt-2">
+    <thead class="protes-table-column">
+    <tr>
+      <th class="protes-table-column-item p-2 px-4" *ngFor="let column of columns">{{ column.description }}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="protes-table-row-box" *ngFor="let row of rows; let i = index" [ngClass]="{ 'protes-edit-mode-row': isRowInEditMode(i) }" [ngClass]="getRowBackgroundColorClass(row.local)">
+      <td *ngFor="let column of columns;" [ngSwitch]="column.description" class="protes-table-row-item p-3 px-4" [ngClass]="{ 'protes-edit-mode-cell': isRowInEditMode(i) }" [ngClass]="{ 'protes-border-right': isColonnaActivities(column) }">
+          <ng-container *ngSwitchCase="'EDIT'">
+            <i class="fas fa-edit protes-table-edit-column d-flex justify-content-center" (click)="onEditClick(i)"></i>
+          </ng-container>
+          <ng-container *ngSwitchCase="'NOTES'">
+            <div class="d-flex">
+              <div *ngIf="row.notesLength != 0; else notesSecondary" class="d-flex flex-row protes-table-count-box" (click)="openModalNotes(true, i)">
+                <i class="fa-solid fa-comment protes-table-edit-column-secondary d-flex align-items-end"></i>
+                <div class="d-flex justify-content-center align-items-center protes-table-count-notes">
+                  <span class="p-1 d-flex">{{ row.notesLength }}</span>
+                </div>
+              </div>
+            </div>
+            <ng-template #notesSecondary>
+              <i class="fa-solid fa-comment-medical protes-table-edit-column-secondary d-flex" (click)="openModalNotes(true, i)"></i>
+            </ng-template>
+          </ng-container>
+          <ng-container *ngSwitchCase="'STATUS'">
+            <div class="d-flex" *ngIf="!isRowInEditMode(i)">
+              <div class="d-flex flex-row protes-table-count-box" [ngClass]="getBackgroundColorClass(row.status)"></div>
+            </div>
+            <select *ngIf="isRowInEditMode(i)" class="p-2" [(ngModel)]="editedData[i][column.key]">
+              <option value="COMPLETED">
+                <div class="d-flex flex-row protes-table-count-box protes-background-green" >COMPLETED</div>
+              </option>
+              <option value="OPEN">
+                <div class="d-flex flex-row protes-table-count-box protes-background-white" >OPEN</div>
+              </option>
+            </select>
+          </ng-container>
+          <ng-container *ngSwitchCase="'EXPECTED DATE'">
+            <span *ngIf="!isRowInEditMode(i)">{{ row[column.key] | date: 'dd/MM/yyyy' }}</span>
+            <input *ngIf="isRowInEditMode(i)"  type="date" class="p-2" [(ngModel)]="editedData[i][column.key]" [required]="column.required" [min]="minDate"/>
+          </ng-container>
+        <ng-container *ngSwitchCase="'STAKEHOLDER'">
+          <span *ngIf="!isRowInEditMode(i)">{{ row[column.key] }}</span>
+          <select *ngIf="isRowInEditMode(i)" class="p-2" [(ngModel)]="editedData[i][column.key]">
+            <option *ngFor="let option of options; let i = index">{{ option }}</option>
+          </select>
+        </ng-container>
+        <ng-container *ngSwitchCase="'INCLUSION PROCESS'">
+          <span *ngIf="!isRowInEditMode(i)">{{ row[column.key] }}</span>
+          <select *ngIf="isRowInEditMode(i)" class="p-2" [(ngModel)]="editedData[i][column.key]">
+            <option *ngFor="let option of optionsTwo; let i = index">{{ option }}</option>
+          </select>
+        </ng-container>
+        <ng-container *ngSwitchCase="'TREATMENT PLAN AND PRESCRIPTION FORM'">
+          <span *ngIf="!isRowInEditMode(i)">{{ row[column.key] }}</span>
+          <select *ngIf="isRowInEditMode(i)" class="p-2" [(ngModel)]="editedData[i][column.key]">
+            <option *ngFor="let option of optionsThree; let i = index">{{ option }}</option>
+          </select>
+        </ng-container>
+        <ng-container *ngSwitchCase="'OUTLET CLUSTER'">
+          <span *ngIf="!isRowInEditMode(i)">{{ row[column.key] }}</span>
+          <select *ngIf="isRowInEditMode(i)" class="p-2" [(ngModel)]="editedData[i][column.key]">
+            <option *ngFor="let option of options; let i = index">{{ option }}</option>
+          </select>
+        </ng-container>
+          <ng-container *ngSwitchDefault>
+            <span *ngIf="!isRowInEditMode(i)">{{ row[column.key] }}</span>
+            <input *ngIf="isRowInEditMode(i)" class="p-2" [(ngModel)]="editedData[i][column.key]" [required]="column.required" />
+          </ng-container>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

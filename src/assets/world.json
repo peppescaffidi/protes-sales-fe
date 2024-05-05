@@ -1,0 +1,82 @@
+[
+  {
+    "regionName": "Abruzzo",
+    "percentage": "2%"
+  },
+  {
+    "regionName": "Basilicata",
+    "percentage": "5%"
+  },
+  {
+    "regionName": "Calabria",
+    "percentage": "5%"
+  },
+  {
+    "regionName": "Campania",
+    "percentage": "15%"
+  },
+  {
+    "regionName": "Emilia-Romagna",
+    "percentage": "20%"
+  },
+  {
+    "regionName": "Friuli-Venezia Giulia",
+    "percentage": "25%"
+  },
+  {
+    "regionName": "Lazio",
+    "percentage": "30%"
+  },
+  {
+    "regionName": "Liguria",
+    "percentage": "35%"
+  },
+  {
+    "regionName": "Lombardia",
+    "percentage": "40%"
+  },
+  {
+    "regionName": "Marche",
+    "percentage": "45%"
+  },
+  {
+    "regionName": "Molise",
+    "percentage": "50%"
+  },
+  {
+    "regionName": "Piemonte",
+    "percentage": "55%"
+  },
+  {
+    "regionName": "Puglia",
+    "percentage": "60%"
+  },
+  {
+    "regionName": "Sardegna",
+    "percentage": "65%"
+  },
+  {
+    "regionName": "Sicilia",
+    "percentage": "70%"
+  },
+  {
+    "regionName": "Toscana",
+    "percentage": "75%"
+  },
+  {
+    "regionName": "Trentino-Alto Adige",
+    "percentage": "80%"
+  },
+  {
+    "regionName": "Umbria",
+    "percentage": "85%"
+  },
+  {
+    "regionName": "Valle d'Aosta",
+    "percentage": "90%"
+  },
+  {
+    "regionName": "Veneto",
+    "percentage": "95%"
+  }
+]

@@ -1,0 +1,122 @@
+<div class="regional-main-box d-flex flex-column">
+  <div class="d-flex flex-column">
+    <h1 class="protes-title p-3 pt-4">Regional Dashboard: {{regionName}}</h1>
+  </div>
+  <div class="d-flex">
+    <div class="d-flex justify-content-start align-items-center w-50">
+      <div class="regional-topbar-box d-flex justify-content-center align-items-center mx-4 mt-2 px-2">
+        <div class="regional-topbar-itembox d-flex">
+          <button class="protes-subtitle py-3 px-2 mx-2" [ngClass]="{'regional-topbar-item-active': infoIsActive}" (click)="activateInfo()">INFORMATIONS</button>
+        </div>
+        <div class="regional-topbar-itembox d-flex">
+          <button class="protes-subtitle py-3 px-2 mx-2" [ngClass]="{'regional-topbar-item-active': inclusionIsActive}" (click)="activateInclusion()">INCLUSION PROCESS</button>
+        </div>
+        <div class="regional-topbar-itembox d-flex">
+          <button class="protes-subtitle py-3 px-2 mx-2" [ngClass]="{'regional-topbar-item-active': supportIsActive}" (click)="activateSupport()" >ACTIVITY PLAN</button>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-end align-items-center w-50" *ngIf="inclusionIsActive">
+      <div class="d-flex justify-content-center align-items-center protes-dropdown py-3 px-2 mx-4" (click)="showModalDropDown(true)">
+          <i class="fa-solid fa-bars protes-dropdown-icon"></i>
+          <h5 class="mb-0 protes-dropdown-text">SELEZIONA OSPEDALE</h5>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex w-100 mx-4">
+    <h3 class="protes-second-subtitle pt-4" *ngIf="inclusionIsActive">Ospedale selezionato: {{outletName}}</h3>
+  </div>
+  <!--*********** GENERAL INFO *************-->
+  <div *ngIf="infoIsActive">
+    <app-protes-table
+      [columns]="columnsGeneralInfo"
+      [rows]="rowsGeneralInfo"
+      [title]="'General Info'"
+      [optionsTwo]="optionsInclusionProcess"
+      [optionsThree]="optionsTreatmentForm"
+      (editClick)="onEditClick($event)"
+      (saveClick)="onSaveGeneralInfoClick($event)"
+    >
+    </app-protes-table>
+    <app-protes-table
+      [columns]="columnsOutletInfo"
+      [rows]="rowsOutletInfo"
+      [options]="optionsOutletCluster"
+      [title]="'Outlet Info'"
+      (editClick)="onEditClick($event)"
+      (saveClick)="onSaveOutletInfoClick($event)"
+      (rowClick)="showModalRow($event)"
+      [importCSV]="true"
+      [addRow]="true"
+      (showModal)="showModal($event)"
+    >
+    </app-protes-table>
+  </div>
+  <!--*********** INCLUSION PROCESS *************-->
+  <div *ngIf="inclusionIsActive">
+    <div class="d-flex flex-column justify-content-center align-items-center w-100">
+      <div class="d-flex justify-content-center align-items-center m-4">
+        <img src="{{rowsInclusionProcessImage}}" class="w-75">
+      </div>
+    </div>
+    <app-protes-table
+      [columns]="columnsInclusionProcess"
+      [rows]="rowsInclusionProcess"
+      [title]="'Process step'"
+      [minDate]="minDate"
+      (editClick)="onEditClick($event)"
+      (showModal)="showModal($event)"
+      (saveClick)="updateInclusionProcessData($event)"
+      (notesClick)="showModalNotes($event)"
+      class="d-flex justify-content-center align-items-center w-100"
+    >
+    </app-protes-table>
+  </div>
+  <!--*********** SUPPORT ACTIVITY *************-->
+  <div *ngIf="supportIsActive">
+    <app-protes-table
+      [columns]="columnsSupportInfo"
+      [rows]="rowsSupportInfo"
+      [title]="'Activity Plan'"
+      (editClick)="onEditClick($event)"
+      (saveClick)="updateActivityInActivityPlan($event)"
+      [listaAttivita]="true"
+      [options]="optionsSupportActivity"
+      (showModal)="showModal($event)"
+      (notesClick)="showModalNotes($event)"
+      (multiselectClick)="showModalMultiselect($event)"
+    >
+    </app-protes-table>
+  </div>
+  <!--*********** MODAL EXPORT *************-->
+  <app-protes-modal
+    *ngIf="isActiveModal"
+    (saveClick)="activateInfo()"
+    (closeModal)="showModal($event)"
+  ></app-protes-modal>
+  <!--*********** MODAL NOTES *************-->
+  <app-protes-modal-notes
+    *ngIf="isActiveModalNotes"
+    (closeModal)="showModalNotes($event)"
+  ></app-protes-modal-notes>
+  <!--*********** MODAL NEW ROW *************-->
+  <app-protes-modal-newrow
+    (closeModal)="showModalRow($event)"
+    (saveClick)="onSaveOutletInfoClick($event)"
+    *ngIf="isActiveModalRow"
+  ></app-protes-modal-newrow>
+  <!--*********** MODAL DROPDOWN *************-->
+  <app-protes-modal-dropdown
+    *ngIf="isActiveModalDropDown"
+    (closeModal)="showModalDropDown($event)"
+    (updateChanges)="updateInclusionChanges($event)"
+    [title]="'Seleziona ospedale'"
+  ></app-protes-modal-dropdown>
+  <!--*********** MODAL MULTISELECT *************-->
+  <app-protes-modal-multiselect
+    *ngIf="isActiveModalMultiselect"
+    (closeModal)="showModalMultiselect($event)"
+    (selected)="importActivitiesFromModal($event)"
+    [title]="'Seleziona attività'"
+  ></app-protes-modal-multiselect>
+</div>

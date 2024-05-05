@@ -1,0 +1,371 @@
+@import "src/app/styles/_variables.scss";
+
+body{
+  width: 100%;
+  height: 100vh;
+  all: unset;
+  background-color: $primaryColor !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+}
+
+.protes-title {
+  font-size: 1.4rem;
+  color: $thirdColor;
+}
+
+.protes-second-subtitle {
+  font-size: 1.2rem;
+  color: $thirdColor;
+  font-weight: 200;
+}
+
+.protes-subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: $seventhColor;
+  margin: 0;
+}
+
+.protes-button-primary{
+  background-color: $thirdColor;
+  color: $primaryColor;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.protes-button-secondary{
+  background-color: #ffffff;
+  color: $thirdColor;
+  border: 0.5px solid $seventhColor;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.protes-button-third{
+  background-color: #30cebc;
+  color: #f0f4f8;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.protes-dropdown{
+  background-color: #30cebc;
+  color: #f0f4f8;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.protes-dropdown-text{
+  font-size: 0.9rem !important;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  margin-right: 0.7rem;
+}
+
+.protes-dropdown-icon{
+  font-size: 0.8rem !important;
+  font-weight: 500;
+  margin-left: 0.7rem;
+}
+
+.protes-modal-text{
+  color: $thirdColor;
+}
+
+.protes-button-fourth{
+  background-color: #194c89;
+  color: #f0f4f8;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+a{
+  all: unset;
+  cursor: pointer;
+}
+
+section{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  all: unset;
+  background-color: $primaryColor;
+}
+
+button {
+  all: unset;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: $thirdColor;
+  border-radius: 10px;
+}
+
+select{
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: $thirdColor;
+  border-radius: 10px;
+}
+
+button:focus {
+  outline: revert;
+}
+
+h5{
+  font-size: 1rem !important;
+}
+
+h6 {
+  font-size: 0.5rem !important;
+}
+
+.border-x{
+  border-right: 0.5px solid rgba(240, 244, 248, 0.28)!important;
+  border-left: 0.5px solid rgba(240, 244, 248, 0.28)!important;
+}
+
+.protes-border-right{
+  border-right: 0.5px solid rgba(240, 244, 248, 0.28)!important;
+}
+
+.protes-border-left{
+  border-right: 0.5px solid rgba(240, 244, 248, 0.28)!important;
+}
+
+.protes-modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.protes-modal-container {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.protes-notes-action-icon{
+  cursor: pointer;
+  color: $seventhColor;
+  font-size: 1.1rem;
+}
+
+.protes-notes-close-icon{
+  cursor: pointer;
+  color: $thirdColor;
+  font-size: 1.4rem;
+}
+
+.protes-notes-message-icon{
+  cursor: pointer;
+  color: $eigthColor;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  padding: 0 0.5rem;
+}
+
+.protes-notes-product-icon{
+  cursor: pointer;
+  color: $eigthColor;
+  font-size: 2rem;
+  margin-right: 1rem;
+  padding: 0 0.5rem;
+}
+
+.protes-notes-clock-icon{
+  cursor: pointer;
+  color: $eigthColor;
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+
+.protes-comment-box{
+  max-width: 25rem;
+}
+
+.protes-notes-title-comment{
+  color: $thirdColor;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.protes-modal-subtitle{
+  color: $thirdColor;
+  font-size: 0.9rem !important;
+  font-weight: 200 !important;
+  margin-bottom: 1rem;
+}
+
+.protes-notes-message-box{
+  border-radius: 20px;
+  border: 1px solid $primaryColor;
+  width: fit-content !important ;
+}
+
+.protes-modal-product-text-box{
+  border-radius: 20px;
+  border: 1px solid $primaryColor;
+}
+
+.protes-notes-description{
+  color: $thirdColor;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.protes-notes-paragraph{
+  color: $thirdColor;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.protes-notes-paragraph-bold{
+  color: $thirdColor;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.protes-notes-comments-box{
+  max-height: 30rem;
+  overflow: auto;
+}
+
+.protes-input{
+  border: 0.2px solid #eaeaea;
+  border-radius: 10px;
+  height: 3rem;
+  width: 100%;
+  padding: 0 0.5rem;
+  color: #141e58;
+}
+
+.protes-placeholder{
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: #141e58;
+  padding: 0;
+  margin: 0;
+}
+
+.protes-input-box{
+  all: unset;
+  margin-top: 1rem;
+  width: 20rem;
+  max-width: 100%!important;
+}
+
+.protes-table-row-item{
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: $thirdColor;
+}
+
+.protes-input-row-item{
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: $thirdColor;
+}
+
+.protes-card{
+  background-color: $secondaryColor;
+  width: fit-content;
+  max-width: 90vw;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.protes-input{
+  border: 0.2px solid #eaeaea;
+  border-radius: 10px;
+  height: 3rem;
+  width: 100%;
+  padding: 0 0.5rem;
+  color: #141e58;
+}
+
+.protes-input-box{
+  all: unset;
+  margin-top: 1rem;
+  width: 20rem;
+  max-width: 100%!important;
+}
+
+.protes-placeholder{
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: #cecece;
+  padding: 0;
+  margin: 0;
+}
+
+.protes-label-input{
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: #141e58;
+  padding: 0 0 0 0.2rem;
+  margin: 0;
+}
+
+.protes-label{
+  font-size: 0.8rem;
+  text-decoration: underline;
+  color: #3d4eb7;
+  padding: 0;
+  margin: 0;
+}
+
+.protes-label-span{
+  font-size: 0.8rem;
+  text-decoration: underline;
+  color: #3d4eb7;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.protes-button-primary{
+  background-color: #141e58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: white;
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+.protes-button-primary:hover{
+  background-color: #20329d;
+}

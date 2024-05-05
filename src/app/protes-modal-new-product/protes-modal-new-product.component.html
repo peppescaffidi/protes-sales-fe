@@ -1,0 +1,63 @@
+<div class="protes-modal-background">
+  <div class="protes-modal-container protes-modal-product-box d-flex flex-column">
+    <div class="d-flex align-items-center">
+      <h2 class="protes-title m-4 col">Crea Farmaco</h2>
+      <div (click)="oncloseModal(false)" class="col d-flex justify-content-end">
+        <i class="fa-solid fa-xmark protes-notes-close-icon m-4"></i>
+      </div>
+    </div>
+    <div class=" d-flex flex-row justify-content-center align-items-center m-3 my-2 ">
+      <div class="d-flex flex-column w-50 protes-input-box px-4">
+        <label for="principio-attivo" class="protes-placeholder">Principio Attivo:</label>
+        <input id="principio-attivo" class="p-2 protes-table-row-item protes-input"/>
+      </div>
+      <div class="d-flex flex-column w-50 protes-input-box px-4">
+        <label for="nome-commerciale" class="protes-placeholder">Nome Commerciale:</label>
+        <input id="nome-commerciale" class="p-2 protes-table-row-item protes-input"/>
+      </div>
+    </div>
+    <div class=" d-flex flex-row justify-content-center align-items-center m-3 my-2">
+      <div class="d-flex flex-column w-50 protes-input-box px-4">
+        <label for="area-terapeutica" class="protes-placeholder">Area terapeutica:</label>
+        <select id="area-terapeutica" class="p-2 protes-input-row-item protes-input">
+          <option disabled selected value></option>
+          <option class="protes-input-row-item" *ngFor="let option of optionsAreaTerapeutica">{{ option }}</option>
+        </select>
+      </div>
+      <div class="d-flex flex-column w-50 protes-input-box px-4">
+        <label for="indicazione-terapeutica" class="protes-placeholder">Indicazione Terapeutica:</label>
+        <input id="indicazione-terapeutica" class="p-2 protes-table-row-item protes-input"/>
+      </div>
+    </div>
+    <div class=" d-flex flex-row justify-content-center align-items-center m-3 my-2">
+      <div class="d-flex flex-column w-50 protes-input-box px-4">
+        <label for="classe-rimborsabilita" class="protes-placeholder">Classe di rimborsabilità:</label>
+        <select id="classe-rimborsabilita" class="p-2 protes-input-row-item protes-input">
+          <option disabled selected value></option>
+          <option class="protes-input-row-item" *ngFor="let option of optionsClasseRimborsabilita">{{ option }}</option>
+        </select>
+      </div>
+      <div class="d-flex flex-column w-50 protes-input-box px-4">
+        <label for="classe-fornitura" class="protes-placeholder">Classe di fornitura:</label>
+        <select id="classe-fornitura" class="p-2 protes-input-row-item protes-input">
+          <option disabled selected value></option>
+          <option class="protes-input-row-item" *ngFor="let option of optionsClasseFornitura">{{ option }}</option>
+        </select>
+      </div>
+    </div>
+    <div class=" d-flex flex-row justify-content-center align-items-center m-3">
+      <div class="d-flex flex-column w-50 protes-input-box px-4">
+        <label for="tipologia-accesso" class="protes-placeholder">Tipologia di accesso al mercato:</label>
+        <select id="tipologia-accesso" class="p-2 protes-input-row-item protes-input">
+          <option disabled selected value></option>
+          <option class="protes-input-row-item" *ngFor="let option of optionsTipologiaAccesso">{{ option }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center m-3">
+      <button class="protes-button-primary">
+        <i class="fa-solid fa-circle-plus mx-1"></i>
+        Save</button>
+    </div>
+  </div>
+</div>
